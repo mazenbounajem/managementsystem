@@ -18,7 +18,7 @@ class CustomerClass():
     #     colors=root.style.colors
     
         second_frame =tb.Frame(self.root)
-        second_frame.place(x=50,y=0,width=1400,height=400)
+        second_frame.place(x=0,y=0,width=1400,height=400)
 
         row_data = [
             ('mazen','1','ghaboun','76352915','mazenbounajem@gmail.com','2024-05-17','2024-05-17','2024-05-17','100000','1')
@@ -52,12 +52,33 @@ class CustomerClass():
         )
         
         
-        table.pack(fill='x',)
-
-        self.buttonFrame=tb.Frame(self.root)
-        self.buttonFrame.place(x=0,y='y',width=50,height=800)
-
+        table.pack(padx=90)
         
+        
+        self.icon_new=PhotoImage(file="images/iconsglobal/add.png")
+        
+        btn_new = ttk.Button(second_frame,image=self.icon_new,bootstyle=('outline'))
+        btn_new.place(x=0,y=0)
+        self.icon_duplicate=PhotoImage(file="images/iconsglobal/duplicate.png")
+        btn_duplicate = ttk.Button(second_frame,image=self.icon_duplicate,bootstyle=('outline'))
+        btn_duplicate.place(x=0,y=80)
+        self.icon_undo=PhotoImage(file="images/iconsglobal/undo.png")
+        btn_undo = ttk.Button(second_frame,image=self.icon_undo,bootstyle=('outline'))
+        btn_undo.place(x=0,y=145)
+        self.icon_delete=PhotoImage(file="images/iconsglobal/delete.png")
+        btn_delete = ttk.Button(second_frame,image=self.icon_delete,bootstyle=('outline'))
+        btn_delete.place(x=0,y=245)
+        self.icon_print=PhotoImage(file="images/iconsglobal/print.png")
+        btn_print = ttk.Button(second_frame,image=self.icon_print,bootstyle=('outline'))
+        btn_print.place(x=0,y=265)
+        self.icon_refresh=PhotoImage(file="images/iconsglobal/refresh.png")
+        btn_refresh = ttk.Button(second_frame,image=self.icon_refresh,bootstyle=('outline'))
+        btn_refresh.place(x=0,y=325)
+        self.icon_search=PhotoImage(file="images/iconsglobal/search.png")
+        btn_search= ttk.Button(second_frame,image=self.icon_search,bootstyle=('outline'))
+        btn_search.place(x=0,y=385)
+        
+
         
        
         
