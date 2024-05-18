@@ -56,6 +56,8 @@ class CustomerClass():
 
         self.buttonFrame=tb.Frame(self.root)
         self.buttonFrame.place(x=0,y='y',width=50,height=800)
+
+        
         
        
         
